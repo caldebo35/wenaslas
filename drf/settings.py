@@ -88,7 +88,7 @@ ROOT_URLCONF = 'drf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'C:\Users\sala7\Documents\holamundolindo\wenaslas\public'],
+        'DIRS': [BASE_DIR / 'wenaslas\public'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
