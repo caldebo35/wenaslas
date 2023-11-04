@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mv&us85d-2@*q#c58#skz34toi9kl-7qph2(h%a26drf-!523i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["trasteat.herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -88,7 +88,7 @@ ROOT_URLCONF = 'drf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'C:\Users\sala7\Documents\holamundolindo\wenaslas\public'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -157,6 +157,7 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = "/static/"
+
 import django_heroku
 django_heroku.settings(locals())
 
