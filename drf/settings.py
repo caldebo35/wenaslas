@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mv&us85d-2@*q#c58#skz34toi9kl-7qph2(h%a26drf-!523i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -51,7 +51,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_METHODS = [
     'DELETE',
-    'GET',
+    'GET',s
     'OPTIONS',
     'PATCH',
     'POST',
