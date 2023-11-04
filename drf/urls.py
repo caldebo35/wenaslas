@@ -28,3 +28,11 @@ urlpatterns = [
     # Agregar una ruta para servir index.html para todas las demás rutas no cubiertas por Django directamente.
     re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += [
+    re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
+]
+
+# Añade las URLs de los archivos estáticos en modo desarrollo (opcional)
+if settings.DEBUG:
+    urlpatterns += staticfiles_urlpatterns()
