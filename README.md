@@ -1,3 +1,0 @@
-# TrabajoGradoBack
-
-#HOLAA PLANETAA
